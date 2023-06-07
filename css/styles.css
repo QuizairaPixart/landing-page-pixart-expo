@@ -296,6 +296,78 @@ a.enlace_pixart{
     text-decoration: underline;
 }
 
+/*popup*/
+
+.popup{
+    border: 1px solid white;
+    background-color: #FFFFFF;
+    color: #000000;
+    width: 300px;
+    z-index: 1;
+    position: absolute;
+    border-radius: 16px;
+    top: 20%;
+    left: 6%;
+    /* transform: translate(-30%, -15%); */
+}
+
+.popup h3{
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 40px;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 10px 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.popup th, .popup td{
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+.popup th{
+    padding-left: 10px;
+}
+
+.popup td{
+    padding: 0 10px;
+}
+
+.popup .btn-cancel{
+    width: 60px;
+    height: 25px;
+    display: inline-block;
+    background-color:  #000000;
+    font-size: 10px;
+    font-weight: 300;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.popup .btn-cancel:active{
+    background-color: #302F2F;
+    border: 1px solid #000000;
+}
+
+.popup .btn-cancel:hover{
+    opacity: 0.5;
+}
+
+.btn-popup{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
 @media (min-width: 1024px) {
 
     body {
