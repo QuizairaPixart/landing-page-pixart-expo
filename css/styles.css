@@ -402,6 +402,27 @@ a.enlace_pixart{
     margin-bottom: 10px;
 }
 
+@media (min-width: 720px) {
+    .container_products_1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 750px;
+        height: 200px;
+        margin: auto;
+    }
+    .container_products_2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 750px;
+        height: 200px;
+        margin: auto;
+    }
+}
+
 
 @media (min-width: 1024px) {
 
