@@ -75,7 +75,6 @@ const slideImage = () => {
 }
 
 const updateClick = (e) => {
-    console.log(e);
     e.preventDefault();
     clearInterval(intervalId);
     imageIndex += e.target.id === "next" ? 1 : -1;
