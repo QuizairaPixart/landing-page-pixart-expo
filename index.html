@@ -69,92 +69,342 @@
         </section>
         <section class="news">
             <div class="carousel_news">
-                <div class="card">
-                    <img class="img_card" src="img/image_2.png" alt="Linea de ensamblaje">
-                    <div class="card_new">
-                        <img src="img/icon_1.png" alt="icono">
-                        <h5>Innovación tecnológica</h5>
-                        <p>Nos destacamos por la búsqueda constante de la Innovación tecnológica. Utilizamos equipos de última generación, como brazos robóticos y sistemas de visión artificial. Estas tecnologías nos permiten garantizar calidad constante  en cada unidad fabricada, optimizando el proceso y minimizando los  errores humanos.</p>
-                        <div class="btns-carousel">
-                            <button class="btn_carousel blue_light"><img src="img/arrow1.png" alt="flecha hacia la izquierda"></button>
-                            <button class="btn_carousel blue_dark"><img src="img/arrow2.png" alt="flecha hacia la derecha"></button>
+                <img class="img_card" src="img/image_2.png" alt="Linea de ensamblaje">
+                <div class="card_new">
+                    <div class="slider" id="slider">
+                        <div class="slider_element">
+                            <img src="img/icon_1.png" alt="icono">
+                            <h5>Innovación tecnológica</h5>
+                            <p>Nos destacamos por la búsqueda constante de la Innovación tecnológica. Utilizamos equipos de última generación, como brazos robóticos y sistemas de visión artificial. Estas tecnologías nos permiten garantizar calidad constante  en cada unidad fabricada, optimizando el proceso y minimizando los  errores humanos.</p>
                         </div>
-                    </div>   
+                        <div class="slider_element">
+                            <img src="img/icon_2.png" alt="icono">
+                            <h5>Producción eficiente</h5>
+                            <p>Hemos diseñado nuestras líneas de producción de manera inteligente, optimizando cada etapa del proceso para lograr una producción ágil y eficiente. Nuestro enfoque se centra en minimizar los tiempos de fabricación sin comprometer la calidad de nuestros productos. Gracias a la implementación de tecnologías avanzadas y a un meticuloso control de calidad, logramos cumplir con plazos de entrega más rápidos sin comprometer la integridad de cada computadora que sale de nuestras instalaciones.</p>
+                        </div>
+                        <div class="slider_element">
+                            <img src="img/icon_3.png" alt="icono">
+                            <h5>Sostenabilidad ambiental</h5>
+                            <p>Estamos comprometidos con la sostenibilidad ambiental. Implementamos prácticas responsables para minimizar el impacto ambiental de nuestro proceso de fabricación. Nos esforzamos por reducir el desperdicio y reciclar adecuadamente los materiales utilizados en la producción. Además, incorporamos fuentes de energía renovable como paneles solares que abastecerán de toda la energía necesaria para el funcionamiento de la fábrica (en total 240 Kva).</p>
+                        </div>
+                    </div>
+                    <div class="btns-carousel">
+                        <button class="btn_carousel blue_light" id="prev"><img src="img/arrow1.png" alt="flecha hacia la izquierda"></button>
+                        <button class="btn_carousel blue_dark" id="next"><img src="img/arrow2.png" alt="flecha hacia la derecha"></button>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="popup" id="popup_braille">
-            <h3>Notebook Braille</h3>
-            <table>
-                <tbody>
-                    <tr>
-                        <th>Sistema Operativo</th>
-                        <td>Windows® 11, Windows® 11 Pro, other</td>
-                    </tr>
-                    <tr>
-                        <th>CPU</th>
-                        <td>Intel® Pentium® Processor N4200 2M Cache, up to 2.50 GHzr</td>
-                    </tr>
-                    <tr>
-                        <th>GPU</th>
-                        <td>Intel® HD Graphics 505</td>
-                    </tr>
-                    <tr>
-                        <th>Display</th>
-                        <td>14” LCD SD 1366 x 768 (16:9)</td>
-                    </tr>
-                    <tr>
-                        <th>RAM</th>
-                        <td>4 GB LPDDR4</td>
-                    </tr>
-                    <tr>
-                        <th>Almacenamiento</th>
-                        <td>eMMC/Fast SSD 128GB | SATA + HDD/SSD storage 7mm ≤ 2TB</td>
-                    </tr>
-                    <tr>
-                        <th>Cámara SD</th>
-                        <td>0.3 Mpix</td>
-                    </tr>
-                    <tr>
-                        <th>I/O Puertos</th>
-                        <td>USB 3.1 x1 | USB 2.0 x1 | 3.5mm Audio Jack x1 | Micro SD x1 | Mini HDMI 1.4a x1</td>
-                    </tr>
-                    <tr>
-                        <th>Conectividad</th>
-                        <td>Wi-Fi 802.11 b/g/n | BT 4.0 BLE</td>
-                    </tr>
-                    <tr>
-                        <th>Audio</th>
-                        <td>Altavoces incorporado 2x 1W / 8Ω | Micrófono incorporado 1x</td>
-                    </tr>
-                    <tr>
-                        <th>Teclado</th>
-                        <td>Teclado en español</td>
-                    </tr>
-                    <tr>
-                        <th>Batería</th>
-                        <td>5000mAh / 7.4v</td>
-                    </tr>
-                    <tr>
-                        <th>Fuente</th>
-                        <td>12V, 2A</td>
-                    </tr>
-                    <tr>
-                        <th>Dimensiones </th>
-                        <td>20 x 220 x 330 mm</td>
-                    </tr>
-                    <tr>
-                        <th>Peso</th>
-                        <td>1250g</td>
-                    </tr>
-                    <tr>
-                        <th>Color</th>
-                        <td>Gris</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="btn-popup">
-                <button id="btn-popup-braille" class="btn-cancel">OK</button>
+        <div class="container_popup" id="popup_braille">
+            <div class="popup">
+                <h3>Notebook Braille</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Sistema Operativo</th>
+                            <td>Windows® 11, Windows® 11 Pro, other</td>
+                        </tr>
+                        <tr>
+                            <th>CPU</th>
+                            <td>Intel® Pentium® Processor N4200 2M Cache, up to 2.50 GHzr</td>
+                        </tr>
+                        <tr>
+                            <th>GPU</th>
+                            <td>Intel® HD Graphics 505</td>
+                        </tr>
+                        <tr>
+                            <th>Display</th>
+                            <td>14” LCD SD 1366 x 768 (16:9)</td>
+                        </tr>
+                        <tr>
+                            <th>RAM</th>
+                            <td>4 GB LPDDR4</td>
+                        </tr>
+                        <tr>
+                            <th>Almacenamiento</th>
+                            <td>eMMC/Fast SSD 128GB | SATA + HDD/SSD storage 7mm ≤ 2TB</td>
+                        </tr>
+                        <tr>
+                            <th>Cámara SD</th>
+                            <td>0.3 Mpix</td>
+                        </tr>
+                        <tr>
+                            <th>I/O Puertos</th>
+                            <td>USB 3.1 x1 | USB 2.0 x1 | 3.5mm Audio Jack x1 | Micro SD x1 | Mini HDMI 1.4a x1</td>
+                        </tr>
+                        <tr>
+                            <th>Conectividad</th>
+                            <td>Wi-Fi 802.11 b/g/n | BT 4.0 BLE</td>
+                        </tr>
+                        <tr>
+                            <th>Audio</th>
+                            <td>Altavoces incorporado 2x 1W / 8Ω | Micrófono incorporado 1x</td>
+                        </tr>
+                        <tr>
+                            <th>Teclado</th>
+                            <td>Teclado en español</td>
+                        </tr>
+                        <tr>
+                            <th>Batería</th>
+                            <td>5000mAh / 7.4v</td>
+                        </tr>
+                        <tr>
+                            <th>Fuente</th>
+                            <td>12V, 2A</td>
+                        </tr>
+                        <tr>
+                            <th>Dimensiones </th>
+                            <td>20 x 220 x 330 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Peso</th>
+                            <td>1250g</td>
+                        </tr>
+                        <tr>
+                            <th>Color</th>
+                            <td>Gris</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-popup">
+                    <button id="btn-popup-braille" class="btn-cancel">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="container_popup" id="popup_educativa">
+            <div class="popup">
+                <h3>Notebook Educativa</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Sistema Operativo</th>
+                            <td>Windows® 11, Windows® 11 Pro, other</td>
+                        </tr>
+                        <tr>
+                            <th>CPU</th>
+                            <td>Intel® Pentium® Processor N4200 2M Cache, up to 2.50 GHz</td>
+                        </tr>
+                        <tr>
+                            <th>GPU</th>
+                            <td>Intel® HD Graphics 505</td>
+                        </tr>
+                        <tr>
+                            <th>Display</th>
+                            <td>14” LCD SD 1366 x 768 (16:9)</td>
+                        </tr>
+                        <tr>
+                            <th>RAM</th>
+                            <td>4 GB LPDDR4</td>
+                        </tr>
+                        <tr>
+                            <th>Almacenamiento</th>
+                            <td>eMMC/Fast SSD 128GB | SATA + HDD/SSD storage 7mm ≤ 2TB</td>
+                        </tr>
+                        <tr>
+                            <th>Cámara SD</th>
+                            <td>0.3 Mpix</td>
+                        </tr>
+                        <tr>
+                            <th>I/O Puertos</th>
+                            <td>USB 3.1 x1 | USB 2.0 x1 | 3.5mm Audio Jack x1 | Micro SD x1 | Mini HDMI 1.4a</td>
+                        </tr>
+                        <tr>
+                            <th>Conectividad</th>
+                            <td>Wi-Fi 802.11 b/g/n | BT 4.0 BLE</td>
+                        </tr>
+                        <tr>
+                            <th>Audio</th>
+                            <td>Altavoces incorporado 2x 1W / 8Ω | Micrófono incorporado 1x</td>
+                        </tr>
+                        <tr>
+                            <th>Teclado</th>
+                            <td>Teclado en español</td>
+                        </tr>
+                        <tr>
+                            <th>Batería</th>
+                            <td>5000mAh / 7.4v</td>
+                        </tr>
+                        <tr>
+                            <th>Fuente</th>
+                            <td>12V, 2A</td>
+                        </tr>
+                        <tr>
+                            <th>Dimensiones </th>
+                            <td>20 x 220 x 330 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Peso</th>
+                            <td>1250g</td>
+                        </tr>
+                        <tr>
+                            <th>Color</th>
+                            <td>Gris</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-popup">
+                    <button id="btn-popup-educativa" class="btn-cancel">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="container_popup" id="popup_empresarial">
+            <div class="popup">
+                <h3>Notebook Empresarial</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Sistema Operativo</th>
+                            <td>Windows® 11, Windows® 11 Pro, other</td>
+                        </tr>
+                        <tr>
+                            <th>CPU</th>
+                            <td>Intel® Pentium® Processor N4200 2M Cache, up to 2.50 GHz</td>
+                        </tr>
+                        <tr>
+                            <th>GPU</th>
+                            <td>Intel® HD Graphics 505</td>
+                        </tr>
+                        <tr>
+                            <th>Display</th>
+                            <td>14” LCD SD 1366 x 768 (16:9)</td>
+                        </tr>
+                        <tr>
+                            <th>RAM</th>
+                            <td>8 GB LPDDR4</td>
+                        </tr>
+                        <tr>
+                            <th>Almacenamiento</th>
+                            <td>eMMC/Fast SSD 256GB | SATA + HDD/SSD storage 7mm ≤ 2TB</td>
+                        </tr>
+                        <tr>
+                            <th>Cámara SD</th>
+                            <td>0.3 Mpix</td>
+                        </tr>
+                        <tr>
+                            <th>I/O Puertos</th>
+                            <td>USB 3.1 x1 | USB 2.0 x1 | 3.5mm Audio Jack x1 | Micro SD x1 | Mini HDMI 1.4a x1</td>
+                        </tr>
+                        <tr>
+                            <th>Conectividad</th>
+                            <td>Wi-Fi 802.11 b/g/n | BT 4.0 BLE</td>
+                        </tr>
+                        <tr>
+                            <th>Audio</th>
+                            <td>Altavoces incorporado 2x 1W / 8Ω | Micrófono incorporado 1x</td>
+                        </tr>
+                        <tr>
+                            <th>Teclado</th>
+                            <td>Teclado en español</td>
+                        </tr>
+                        <tr>
+                            <th>Batería</th>
+                            <td>5000mAh / 7.4v</td>
+                        </tr>
+                        <tr>
+                            <th>Fuente</th>
+                            <td>12V, 2A</td>
+                        </tr>
+                        <tr>
+                            <th>Dimensiones </th>
+                            <td>20 x 220 x 330 mm</td>
+                        </tr>
+                        <tr>
+                            <th>Peso</th>
+                            <td>1250g</td>
+                        </tr>
+                        <tr>
+                            <th>Color</th>
+                            <td>Gris</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-popup">
+                    <button id="btn-popup-empresarial" class="btn-cancel">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="container_popup" id="popup_gamer">
+            <div class="popup">
+                <h3>Notebook Gamer</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Sistema Operativo</th>
+                            <td>Windows® 11</td>
+                        </tr>
+                        <tr>
+                            <th>CPU</th>
+                            <td>AMD Ryzen™ 7 6800H(TDP 45W)</td>
+                        </tr>
+                        <tr>
+                            <th>GPU</th>
+                            <td>AMD Radeon™ RX 6650M XT, 8GB GDDR6</td>
+                        </tr>
+                        <tr>
+                            <th>Display</th>
+                            <td>QHD (2560x1440) 165Hz | 16.1" 16:9   IPS</td>
+                        </tr>
+                        <tr>
+                            <th>RAM</th>
+                            <td>DDR5 4800MT/s  16G  2xSO-DIMM</td>
+                        </tr>
+                        <tr>
+                            <th>Almacenamiento</th>
+                            <td>512GB M.2,   2xSSD  (PCIe Gen4)</td>
+                        </tr>
+                        <tr>
+                            <th>Cámara SD</th>
+                            <td>2.0MP, with LED</td>
+                        </tr>
+                        <tr>
+                            <th>I/O Puertos</th>
+                            <td>USB 3.2 Gen2x2 | 1xUSB4, 1xUSB-C | 1xHDMI Type A(HDMI 2.1)</td>
+                        </tr>
+                        <tr>
+                            <th>Conectividad</th>
+                            <td>AMD RZ608 (Wifi 6E 802.11ax with BT 5.2 dual band 2x2)</td>
+                        </tr>
+                        <tr>
+                            <th>Audio</th>
+                            <td>1x Combo Jack ,1x MIC Jack</td>
+                        </tr>
+                        <tr>
+                            <th>Micrófono</th>
+                            <td>DMICx2</td>
+                        </tr>
+                        <tr>
+                            <th>Teclado</th>
+                            <td>Retroiluminado</td>
+                        </tr>
+                        <tr>
+                            <th>Batería</th>
+                            <td>4 Celdas 80Wh >10 Hours</td>
+                        </tr>
+                        <tr>
+                            <th>Fuente</th>
+                            <td>19.5V, 230W 100/240V AC 50/60Hz</td>
+                        </tr>
+                        <tr>
+                            <th>Dimensiones </th>
+                            <td>367.6x265.9x21.9mm</td>
+                        </tr>
+                        <tr>
+                            <th>Peso</th>
+                            <td>2.3Kg (5.08bl)</td>
+                        </tr>
+                        <tr>
+                            <th>Huella Dactilar</th>
+                            <td>GF3206+GM188</td>
+                        </tr>
+                        <tr>
+                            <th>Color</th>
+                            <td>Gris</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-popup">
+                    <button id="btn-popup-gamer" class="btn-cancel">OK</button>
+                </div>
             </div>
         </div>
     </main>
