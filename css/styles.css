@@ -7,6 +7,23 @@
 }
 
 /*Reglas Generales de CSS de toda la página*/
+.btn-cancel{
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color:  #FFFFFF;  
+    font-weight: 300;   
+    text-align: center;
+    line-height: 25px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+.mdm2{
+        background-color:  #000000;
+}
 body {
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
@@ -35,6 +52,7 @@ img {
 
 main {
     margin: auto;
+    background-color: black;
 }
 
 /*Header*/
@@ -360,12 +378,13 @@ a.enlace_pixart{
 }
 
 .popup th, .popup td{
+    text-align: left;
     font-size: 10px;
     padding: 10px 0;
 }
 
 .popup th{
-    padding-left: 10px;
+    padding-left: 10px 5px;
 }
 
 .popup td{
@@ -401,7 +420,6 @@ a.enlace_pixart{
     justify-content: center;
     margin-bottom: 10px;
 }
-
 @media (min-width: 720px) {
     .container_products_1{
         display: flex;
@@ -422,7 +440,6 @@ a.enlace_pixart{
         margin: auto;
     }
 }
-
 
 @media (min-width: 1024px) {
 
@@ -605,8 +622,9 @@ a.enlace_pixart{
     }
     
     .popup th, .popup td{
+	text-align: left;
         font-size: 15px;
-        padding: 5px 0;
+        padding: 5px 5px;
     }
     
     .popup .btn-cancel{
@@ -697,8 +715,9 @@ a.enlace_pixart{
     }
     
     .popup th, .popup td{
+	text-align: left;
         font-size: 20px;
-        padding: 5px 0;
+        padding: 5px 5px;
     }
     
     .popup{
